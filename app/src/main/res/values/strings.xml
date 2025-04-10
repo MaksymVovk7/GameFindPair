@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GameFindPair</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play_ten_card">Грати (10 карток)</string>
+    <string name="play_twelve_card">Грати (20 карток)</string>
+    <string name="leaderboard">Лідерборд</string>
+    <string name="exit">Вийти</string>
+    <string name="time">Час: 0с</string>
+    <string name="leader_time">20 с</string>
+    <string name="leader_card">10 карток</string>
+    <string name="leader_date">09.04.2025</string>
+</resources>

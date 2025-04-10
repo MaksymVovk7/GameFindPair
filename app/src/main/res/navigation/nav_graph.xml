@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.gamefindpair.ui.menu.MenuFragment"
+        android:label="Menu" >
+        <action
+            android:id="@+id/action_menu_to_game"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_menu_to_leaderboard"
+            app:destination="@id/leaderboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.gamefindpair.ui.game.GameFragment"
+        android:label="Game" >
+        <action
+            android:id="@+id/action_game_to_menu"
+            app:destination="@id/menuFragment" />
+        <argument
+            android:name="cardCount"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/leaderboardFragment"
+        android:name="com.example.gamefindpair.ui.leaderboard.LeaderboardFragment"
+        android:label="Leaderboard" >
+        <action
+            android:id="@+id/action_leaderboard_to_menu"
+            app:destination="@id/menuFragment" />
+    </fragment>
+</navigation>
